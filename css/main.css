@@ -1251,7 +1251,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(../images/blackbg.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1483,6 +1483,7 @@ header .logo a {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
+	/* margin-bottom: 460px; */
 }
 .about-content .info-list {
 	list-style: none;
@@ -2462,7 +2463,9 @@ footer .row {
 	max-width: 900px;
 }
 footer .social {
-	text-align: right;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
 }
 footer .footer-social {
 	display: inline-block;
@@ -2485,7 +2488,7 @@ footer .footer-social li a:hover{
 	color: rgba(235, 21, 110, 0.664);
 }
 
-footer .copyright span {
+/* footer .copyright span {
 	display: inline-block;
 }
 footer .copyright span::after {
@@ -2496,7 +2499,38 @@ footer .copyright span::after {
 }
 footer .copyright span:last-child::after {
 	display: none;
+} */
+
+
+.animation{
+	width: 1370px;
+	height:80px;
+	animation-name: ani;
+	position: relative;
+	animation-duration: 20s;
+	animation-direction:inherit;
+	animation-play-state:running;
+	animation-fill-mode:forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+
 }
+.animation img{
+	width: 230px;
+}
+
+@keyframes ani{
+	 0%{left: -240px;
+		bottom: 0px;
+	 }
+	 50%{left: 1370px;
+		 bottom: 0px;
+	}
+	100%{left: -240px;
+		 bottom: 0px;
+	}
+}
+
 
 /**
  * responsive:
